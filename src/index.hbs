@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Storefront UI/UX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- SWIPER -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"  rel="stylesheet">
+</head>
+
+<body class="list">
+    <!-- MAIN -->
+    <main id="mainContent" class="container position-relative">
+
+        <!-- STOREFRONT PROMOS -->
+        <div id="cBanner" class="row sticky-lg-top pt-2">
+            {{> partials/_CommercialBanner }}
+        </div>
+
+        <!-- BREADCRUMBS -->      
+        <nav class="position-absolute bottom-0 position-lg-static mt-lg-3" aria-label="breadcrumb">
+            {{> partials/_Breadcrumbs }}
+        </nav>
+        
+        <!-- CATEGORIES -->
+        <div id="categories" class="row">
+            {{> partials/_Categories }}
+        </div>
+
+        <!-- TITLE & DESCRIPTION -->
+        <section id="titleAndDescription" class="row mb-3">
+            <div class="col-12 d-flex justify-content-between justify-content-lg-start align-items-center newCommercialTitle">
+                <h1 class="fs-6 fw-bold py-3 m-0">Camisetas y tops mujer</h1>
+                <span class="opacity-75 fs-085-rem pt-1 ps-0 ps-lg-3">(1140 Art.)</span>
+            </div>           
+            <div class="col-12">
+                <article class="row">
+                    <div id="stfDescription" class="col">
+                        <p id="descriptionText" class="fs-085-rem line-clamp text-justify pe-5 pe-lg-0">No te pierdas nuestra colección de <strong>vestidos de mujer</strong> para esta temporada: vestidos de fiesta, vestidos para el día a día o vestidos para ir a trabajar. En todos les estilos, tanto largos como cortos y en todas las formas: vestidos camiseros, de escote palabra de honor, ceñidos... ¡Renueva tu armario y encuentra el vestido que va contigo!</p>
+                    </div>                  
+                    <div id="toggleDescription" class="position-absolute end-0 col-auto d-block d-sm-none">
+                        <div class="row">
+                            <div id="readMoreStfDescription" class="col pt-3 mt-4">
+                                <span class="fs-085-rem text-decoration-underline venca-color">Leer más</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>              
+            </div>    
+        </section>
+
+        <!-- FILTERS -->
+        <section id="filters" class="row mb-3">
+            <div class="col-12 d-flex d-lg-none justify-content-between align-items-center">
+                <!-- Mobile -->
+                {{> partials/Filters/_FiltersMobile }}
+            </div>
+
+            <!-- Desktop -->
+            <div class="row d-none d-lg-flex justify-content-between pe-0">
+                <div class="col-10">
+                    {{> partials/Filters/_FiltersDesktop }}
+                </div>
+                <!-- Sort by dropdown -->
+                <div class="col-2 justify-content-end pe-0">
+                    {{> partials/Filters/_SortBy }}
+                </div> 
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products" class="row pb-5 pb-lg-3">
+            <div class="col-12 px-lg-2">
+                <article id="results" class="position-relative px-2">
+                    
+                    <!-- Choose Views -->
+                    <section class="position-relative" id="chooseViews">
+                        {{> partials/_ChooseViews }}
+                    </section>
+
+                    <!-- Product List -->
+                    <section id="prodList" class="row">
+                        {{> partials/_Products }}                        
+                    </section>
+                </article>
+            </div>
+        </section>
+        
+    </main>
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- CUSTOM -->
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>

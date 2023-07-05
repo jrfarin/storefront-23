@@ -1,0 +1,37 @@
+<section id="filters-dk" class="d-flex align-items-center">
+    
+    <!-- Type of Product -->
+    <article class="filter-product-type dropdown">
+        <a href="#" class="dropdown-toggle fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2" role="button" id="dropdownFilterProductType" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Tipo de producto</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownFilterProductType">
+            <div class="col-11 d-flex justify-content-between border-bottom align-items-center p-2 mx-auto">
+                <span class="fs-085-rem opacity-50">Buscar por tipo</span>
+                <svg width="18" height="18" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.8359 22.575L17.7891 16.5281C17.6813 16.4203 17.5406 16.3641 17.3906 16.3641H16.9078C18.5156 14.625 19.5 12.3047 19.5 9.75C19.5 4.36406 15.1359 0 9.75 0C4.36406 0 0 4.36406 0 9.75C0 15.1359 4.36406 19.5 9.75 19.5C12.3047 19.5 14.625 18.5156 16.3641 16.9125V17.3906C16.3641 17.5406 16.425 17.6813 16.5281 17.7891L22.575 23.8359C22.7953 24.0563 23.1516 24.0563 23.3719 23.8359L23.8359 23.3719C24.0563 23.1516 24.0563 22.7953 23.8359 22.575ZM9.75 18C5.18906 18 1.5 14.3109 1.5 9.75C1.5 5.18906 5.18906 1.5 9.75 1.5C14.3109 1.5 18 5.18906 18 9.75C18 14.3109 14.3109 18 9.75 18Z" fill="#333333"></path>
+                </svg>                            
+            </div>                             
+            {{> _ProductTypeFilters }}
+            {{> _ClearApply }}                              
+        </div>                            
+    </article>
+
+    <!-- Sizes -->
+    <article class="filter-size dropdown">
+        <a href="#" class="dropdown-toggle fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2" role="button" id="dropdownFilterSize" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Talla</a>
+        <div class="dropdown-menu p-3" aria-labelledby="dropdownFilterSize">
+            {{> _SizeFilters }}
+            {{> _ClearApply }}
+        </div>
+    </article>
+
+
+    <a href="" class="fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2">Color</a>
+    <a href="" class="fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2">Precio</a>
+    <a href="" class="fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2">Características</a>
+    <a href="" class="fs-075-rem d-block button-vc text-uppercase text-decoration-none py-2 px-lg-2 me-2">Marcas</a>
+
+    <!-- Only Venca -->
+    <article class="only-venca-filter">
+        {{> _OnlyVencaFilters}}
+    </article>
+</section>
