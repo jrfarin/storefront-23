@@ -15,9 +15,6 @@ import './static/img/white.webp';
 import { showStrFields, swiperColorPills } from './js/sliders';
 import { toggleShowDescription, expandCollapseBox, wishlistIcon } from './js/custom';  
 
-
-showStrFields();
-swiperColorPills();
 toggleShowDescription();
 expandCollapseBox();
 wishlistIcon();

@@ -55,30 +55,32 @@
 }
 
 /* === SWIPER PILLS === */
-.swiperColorPills {  
-    max-width: 85%;
-    margin: 0;
-    .swiper-wrapper { 
-        .colorpicker {
-            img {
-                border-radius: 50%;
-                max-width: 32px;
-            }   
-            &.active {
+#prodList {
+    .swiperColorPills {  
+        max-width: 85%;
+        margin: 0;
+        .swiper-wrapper { 
+            .colorpicker {
                 img {
-                    border: 2px solid #000;
-                    padding: 2px;
+                    border-radius: 50%;
+                    max-width: 32px;
+                }   
+                &.active {
+                    img {
+                        border: 2px solid #000;
+                        padding: 2px;
+                    }
                 }
-            }
-        }   
+            }   
+        }
+    }  
+    .swiper-button-next {    
+        &:after {
+            font-size: 1rem;
+            font-weight: bold;
+            color: #000;
+        } 
     }
-}  
-.swiper-button-next {    
-    &:after {
-        font-size: 1rem;
-        font-weight: bold;
-        color: #000;
-    } 
 }
 
 /* === FILTERS DK === */
@@ -91,6 +93,20 @@
         &.active {
             background-color: #000;
             color: #fff;
+        }
+    }
+    #colorFilter {
+        .count-6 {
+            column-count: 6; 
+            @include laptop {
+                column-count: 4;
+                column-gap: 0;
+            }
+        }
+        label {    
+            &.active {
+                border: solid 3px $textColor!important;
+            }
         }
     }
     #filters-dk {
