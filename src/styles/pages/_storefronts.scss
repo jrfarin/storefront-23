@@ -63,7 +63,7 @@
             .colorpicker {
                 img {
                     border-radius: 50%;
-                    max-width: 32px;
+                    max-width: 2rem;
                 }   
                 &.active {
                     img {
@@ -96,22 +96,57 @@
         }
     }
     #colorFilter {
-        .count-6 {
-            column-count: 6; 
-            @include laptop {
-                column-count: 4;
-                column-gap: 0;
-            }
-        }
         label {    
             &.active {
                 border: solid 3px $textColor!important;
+            }
+            &.pill-rounded {
+                width: 2.5rem;
+                height: 2.5rem;
+                @include laptop {
+                    width: 2.125rem;
+                    height: 2.125rem;
+                }
+            }
+        }
+    }
+    .noui-slider-round {
+        &.noUi-horizontal {
+            height: 12px;
+        }
+        .noUi-connect {
+            background-color: #aa0061;
+        }
+        .noUi-handle {
+            top: -9px;
+            width: 28px;
+            border-radius: 50%;
+            &:after {
+                content: "€";
+                left: 32px;
+                top: 32px;
+                @include laptop {
+                    top: 30px;
+                }
+                background: none;
+                font-weight: bold;
+            }
+            .noUi-tooltip {
+                bottom: -30px;
+                background: none;
+                border: none;
+                font-size: .85rem;
+                font-weight: bold;
             }
         }
     }
     #filters-dk {
         .dropdown-menu {
-            min-width: 13.125rem;
+            max-width: 13.125rem;
+            &.filter-price-width {
+                min-width: 16.125rem;
+                min-height: 10rem;
+            }
             ul, &>div {
                 max-height: $max-filters-height;
                 overflow-y: auto;

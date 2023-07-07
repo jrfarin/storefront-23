@@ -23,7 +23,7 @@
             <div class="modal-body px-4">
                 <!-- Only Venca -->
                 <div class="row">
-                    <div class="col-12 mb-3">
+                    <div class="col-12 mb-2">
                         {{> _OnlyVencaFilters}}
                     </div>
                 </div>
@@ -36,10 +36,10 @@
                             <!-- Product Type -->
                             <div id="productTypeFilter" class="accordion-item">
                                 <h2 class="accordion-header" id="headingProductType">
-                                    <button class="accordion-button collapsed fs-085-rem font-weight-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterProductType" aria-expanded="false" aria-controls="filterProductType">Tipo de producto</button>
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterProductType" aria-expanded="false" aria-controls="filterProductType">Tipo de producto</button>
                                 </h2>
                                 <div id="filterProductType" class="accordion-collapse collapse" aria-labelledby="headingProductType" data-bs-parent="#accordionFilters">
-                                    <div class="accordion-body ps-0">
+                                    <div class="accordion-body pt-0 ps-0">
                                         {{> _ProductTypeFilters }}
                                     </div>
                                 </div>
@@ -48,10 +48,10 @@
                             <!-- Sizes -->
                             <div id="sizeFilter" class="accordion-item">
                                 <h2 class="accordion-header" id="headingSizes">
-                                    <button class="accordion-button collapsed fs-085-rem font-weight-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterSizes" aria-expanded="false" aria-controls="filterSizes">Talla</button>
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterSizes" aria-expanded="false" aria-controls="filterSizes">Talla</button>
                                 </h2>
                                 <div id="filterSizes" class="accordion-collapse collapse" aria-labelledby="headingSizes" data-bs-parent="#accordionFilters">
-                                    <div class="accordion-body ps-0">
+                                    <div class="accordion-body pt-0 ps-0">
                                         {{> _SizeFilters }}
                                     </div>
                                 </div>
@@ -60,11 +60,47 @@
                             <!-- Color -->
                             <div id="colorFilter" class="accordion-item">
                                 <h2 class="accordion-header" id="headingColor">
-                                    <button class="accordion-button collapsed fs-085-rem font-weight-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterColor" aria-expanded="false" aria-controls="filterColor">Color</button>
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterColor" aria-expanded="false" aria-controls="filterColor">Color</button>
                                 </h2>
                                 <div id="filterColor" class="accordion-collapse collapse" aria-labelledby="headingColor" data-bs-parent="#accordionFilters">
-                                    <div class="accordion-body ps-0">
+                                    <div class="accordion-body pt-0 ps-0">
                                         {{> _ColorFilters }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Price -->
+                            <div id="priceFilter" class="accordion-item">
+                                <h2 class="accordion-header" id="headingPrice">
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterPrice" aria-expanded="false" aria-controls="filterPrice">Precio</button>
+                                </h2>
+                                <div id="filterPrice" class="accordion-collapse collapse" aria-labelledby="headingPrice" data-bs-parent="#accordionFilters">
+                                    <div class="accordion-body pt-0 ps-0">
+                                        {{> _PriceFilters }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Features -->
+                            <div id="featuresFilter" class="accordion-item">
+                                <h2 class="accordion-header" id="headingFeatures">
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterFeatures" aria-expanded="false" aria-controls="filterFeatures">Características</button>
+                                </h2>
+                                <div id="filterFeatures" class="accordion-collapse collapse" aria-labelledby="headingFeatures" data-bs-parent="#accordionFilters">
+                                    <div class="accordion-body pt-0 ps-0">
+                                        {{> _FeaturesFilter }}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brands -->
+                            <div id="brandsFilter" class="accordion-item">
+                                <h2 class="accordion-header" id="headingBrands">
+                                    <button class="accordion-button collapsed fs-085-rem fw-bold text-secondary bg-white shadow-none px-0" type="button" data-bs-toggle="collapse" data-bs-target="#filterBrands" aria-expanded="false" aria-controls="filterBrands">Marcas</button>
+                                </h2>
+                                <div id="filterBrands" class="accordion-collapse collapse" aria-labelledby="headingBrands" data-bs-parent="#accordionFilters">
+                                    <div class="accordion-body pt-0 ps-0">
+                                        {{> _BrandsFilter }}
                                     </div>
                                 </div>
                             </div>

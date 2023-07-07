@@ -13,11 +13,15 @@ import './static/img/white.webp';
 
 
 import { showStrFields, swiperColorPills } from './js/sliders';
-import { toggleShowDescription, expandCollapseBox, wishlistIcon } from './js/custom';  
+import { toggleShowDescription, expandCollapseBox, wishlistIcon, toggleActiveClass } from './js/custom';
+import { priceSlider } from './js/noui';
 
 toggleShowDescription();
 expandCollapseBox();
 wishlistIcon();
+toggleActiveClass();
+priceSlider();  
+
 
 
 
