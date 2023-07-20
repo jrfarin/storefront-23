@@ -1,4 +1,47 @@
-<section id="sortBy" class="dropdown w-100">
+<!-- MOBILE -->
+<div class="col-12 d-flex justify-content-between border-bottom align-items-center p-2 mb-4 mx-auto d-lg-none">  
+    <ul class="list-unstyled ps-0">
+        <li>
+            <div class="form-check custom-radio position-relative">
+                <label class="fs-085-rem">
+                    <span class="lh-lg ps-2">Relevancia</span>
+                    <input type="checkbox" checked>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check custom-radio position-relative">
+                <label class="fs-085-rem">
+                    <span class="lh-lg ps-2">Precio menor</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check custom-radio position-relative">
+                <label class="fs-085-rem">
+                    <span class="lh-lg ps-2">Precio mayor</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check custom-radio position-relative">
+                <label class="fs-085-rem">
+                    <span class="lh-lg ps-2">Novedades</span>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </li>
+    </ul>                    
+</div> 
+
+<!-- DESKTOP -->
+<section id="sortBy" class="dropdown w-100 d-none d-lg-block">
     <button class="w-100 button-vc fs-075-rem text-uppercase dropdown-toggle py-2 px-3" type="button" id="sortByDropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">Ordenar por</button>                        
     <ul class="dropdown-menu w-100" aria-labelledby="sortByDropdownBtn">
         <li class="d-flex align-items-center"><a class="fs-075-rem text-uppercase border-bottom dropdown-item" href="#">Precio Mayor</a></li>

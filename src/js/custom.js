@@ -82,8 +82,8 @@ export const wishlistIcon = () => {
     };
 }
 
-// Toggle Class Acrive
-export const toggleActiveClass = () => {
+// Toggle Class Active
+export const toggleActiveClass = (e) => {
     const pillLabel = document.querySelectorAll('.pill-rounded');
     
     pillLabel.forEach(function(pill) {
@@ -92,7 +92,5 @@ export const toggleActiveClass = () => {
 
     function pillActive() {
         this.classList.toggle('active')
-    }
-    
+    }  
 }
-

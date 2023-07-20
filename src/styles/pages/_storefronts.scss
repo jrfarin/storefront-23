@@ -74,16 +74,9 @@
             }   
         }
     }  
-    .swiper-button-next {    
-        &:after {
-            font-size: 1rem;
-            font-weight: bold;
-            color: #000;
-        } 
-    }
 }
 
-/* === FILTERS DK === */
+/* === FILTERS === */
 #filters {
     label { 
         &.pill-rounded {
@@ -96,17 +89,26 @@
         }
     }
     #colorFilter {
-        label {    
+        .pill-rounded {
+            width: 2.75rem;
+            height: 2.75rem;
+            @include laptop {
+                width: 2.125rem;
+                height: 2.125rem;
+            }
             &.active {
                 border: solid 3px $textColor!important;
             }
-            &.pill-rounded {
-                width: 2.5rem;
-                height: 2.5rem;
+            label {
+                width: 2.25rem;
+                height: 2.25rem;
                 @include laptop {
-                    width: 2.125rem;
-                    height: 2.125rem;
-                }
+                    width: 1.525rem;
+                    height: 1.525rem;
+                } 
+                &[title="BLANCO"] {
+                    border: solid 2px $textColor;
+                }            
             }
         }
     }
@@ -115,7 +117,7 @@
             height: 12px;
         }
         .noUi-connect {
-            background-color: #aa0061;
+            background-color: $vencaColor;
         }
         .noUi-handle {
             top: -9px;

@@ -1,9 +1,10 @@
 // SLIDERS
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const showStrFields = new Swiper('.swpCategory', {
     slidesPerView: 'auto',
@@ -31,4 +32,16 @@ export const swiperColorPills =  new Swiper('.swiperColorPills', {
             spaceBetween: 5,
         },
     }         
+});
+
+export const swiperLookBook = new Swiper('.swiperLookBook', {
+    modules: [Navigation, Pagination],
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });

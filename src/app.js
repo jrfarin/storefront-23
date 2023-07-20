@@ -12,7 +12,7 @@ import './static/img/sky.webp';
 import './static/img/white.webp';
 
 
-import { showStrFields, swiperColorPills } from './js/sliders';
+import { showStrFields, swiperColorPills, swiperLookBook } from './js/sliders';
 import { toggleShowDescription, expandCollapseBox, wishlistIcon, toggleActiveClass } from './js/custom';
 import { priceSlider } from './js/noui';
 

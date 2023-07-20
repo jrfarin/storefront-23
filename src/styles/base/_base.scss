@@ -49,5 +49,17 @@ a {
     }
 }
 
+// Text
+.text-justify {
+    text-align: justify;
+}
+.text-color {
+    color: $textColor !important;
+}
+.lh-lg {
+    @include laptop {
+        line-height: 1!important;
+    }
+}
 
 

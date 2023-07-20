@@ -15,6 +15,4 @@ export const priceSlider = () => {
             tooltips: true,
         });
     })
-    
-    
 }
