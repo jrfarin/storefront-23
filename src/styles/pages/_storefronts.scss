@@ -93,8 +93,8 @@
             width: 2.75rem;
             height: 2.75rem;
             @include laptop {
-                width: 2.125rem;
-                height: 2.125rem;
+                width: 2.6rem;
+                height: 2.6rem;
             }
             &.active {
                 border: solid 3px $textColor!important;
@@ -103,8 +103,8 @@
                 width: 2.25rem;
                 height: 2.25rem;
                 @include laptop {
-                    width: 1.525rem;
-                    height: 1.525rem;
+                    width: 2rem;
+                    height: 2rem;
                 } 
                 &[title="BLANCO"] {
                     border: solid 2px $textColor;
@@ -144,12 +144,12 @@
     }
     #filters-dk {
         .dropdown-menu {
-            max-width: 13.125rem;
+            width: 13.125rem;
             &.filter-price-width {
                 min-width: 16.125rem;
                 min-height: 10rem;
             }
-            ul, &>div {
+            ul, .max-filters-height {
                 max-height: $max-filters-height;
                 overflow-y: auto;
                 &::-webkit-scrollbar {
@@ -175,7 +175,10 @@
     }
 }
 
-
+// .max-filters-height {
+//     max-height: $max-filters-height;
+//     overflow-y: auto
+// }
 
 
 

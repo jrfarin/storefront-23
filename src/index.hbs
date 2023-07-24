@@ -22,35 +22,37 @@
             {{> partials/_Breadcrumbs }}
         </nav>
         
-        <!-- CATEGORIES -->
-        <div id="categories" class="row">
-            {{> partials/_Categories }}
-        </div>
+        <div class="d-flex flex-column">
+            <!-- CATEGORIES -->
+            <section id="categories" class="row order-lg-2 mb-lg-4">
+                {{> partials/_Categories }}
+            </section>
 
-        <!-- TITLE & DESCRIPTION -->
-        <section id="titleAndDescription" class="row mb-3">
-            <div class="col-12 d-flex justify-content-between justify-content-lg-start align-items-center newCommercialTitle">
-                <h1 class="fs-6 fw-bold py-3 m-0">Camisetas y tops mujer</h1>
-                <span class="opacity-75 fs-085-rem pt-1 ps-0 ps-lg-3">(1140 Art.)</span>
-            </div>           
-            <div class="col-12">
-                <article class="row">
-                    <div id="stfDescription" class="col">
-                        <p id="descriptionText" class="fs-085-rem line-clamp text-justify pe-5 pe-lg-0">No te pierdas nuestra colección de <strong>vestidos de mujer</strong> para esta temporada: vestidos de fiesta, vestidos para el día a día o vestidos para ir a trabajar. En todos les estilos, tanto largos como cortos y en todas las formas: vestidos camiseros, de escote palabra de honor, ceñidos... ¡Renueva tu armario y encuentra el vestido que va contigo!</p>
-                    </div>                  
-                    <div id="toggleDescription" class="position-absolute end-0 col-auto d-block d-sm-none">
-                        <div class="row">
-                            <div id="readMoreStfDescription" class="col pt-3 mt-4">
-                                <span class="fs-085-rem text-decoration-underline venca-color">Leer más</span>
+            <!-- TITLE & DESCRIPTION -->
+            <section id="titleAndDescription" class="row order-lg-1 mb-3 mb-lg-0">
+                <div class="col-12 d-flex justify-content-between justify-content-lg-start align-items-center newCommercialTitle">
+                    <h1 class="fs-6 fw-bold py-3 m-0">Camisetas y tops mujer</h1>
+                    <span class="opacity-75 fs-085-rem pt-1 ps-0 ps-lg-3">(1140 Art.)</span>
+                </div>           
+                <div class="col-12">
+                    <article class="row">
+                        <div id="stfDescription" class="col">
+                            <p id="descriptionText" class="fs-085-rem line-clamp text-justify pe-5 pe-lg-0">No te pierdas nuestra colección de <strong>vestidos de mujer</strong> para esta temporada: vestidos de fiesta, vestidos para el día a día o vestidos para ir a trabajar. En todos les estilos, tanto largos como cortos y en todas las formas: vestidos camiseros, de escote palabra de honor, ceñidos... ¡Renueva tu armario y encuentra el vestido que va contigo!</p>
+                        </div>                  
+                        <div id="toggleDescription" class="position-absolute end-0 col-auto d-block d-sm-none">
+                            <div class="row">
+                                <div id="readMoreStfDescription" class="col pt-3 mt-4">
+                                    <span class="fs-085-rem text-decoration-underline venca-color">Leer más</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </article>              
-            </div>    
-        </section>
+                    </article>              
+                </div>    
+            </section>
+        </div>
 
         <!-- CAROUSEL LOOKBOOK -->
-        <section id="carouselLookBook" class="row mb-3">
+        {{!-- <section id="carouselLookBook" class="row mb-3">s
             <div class="col-12">
                 <div class="swiper swiperLookBook">
                     <div class="swiper-wrapper">
@@ -100,7 +102,7 @@
                     <div class="swiper-pagination bottom-0"></div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
         <!-- FILTERS -->
         <section id="filters" class="row mb-3">
