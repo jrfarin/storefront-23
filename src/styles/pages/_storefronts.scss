@@ -54,8 +54,27 @@
     }
 }
 
-/* === SWIPER PILLS === */
+
+
+
 #prodList {
+    /* === ASPECT RATIO === */
+    .aspect {
+        height: 0;
+        padding-top: 100%; /* default 1:1 */
+        > :first-child {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        &.ratio-80-107 {
+            padding-top: 133.75%;
+        }
+    }
+
+    /* === SWIPER PILLS === */
     .swiperColorPills {  
         max-width: 85%;
         margin: 0;
